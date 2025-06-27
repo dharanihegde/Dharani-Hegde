@@ -61,6 +61,64 @@ Do you want to perform another calculation? (yes/no): no
 - **b**: double (floating-point number)
 - **operation**: string (operation name or symbol)
 
+## Problem-2: Odd Number Series Generator
+
+### Description
+A program that generates the first 'a' odd numbers based on user input, where 'a' is a positive integer.
+
+### Features
+- **Simple and Efficient**: Uses mathematical formula to generate odd numbers
+- **Input Validation**: Ensures only valid positive integers are accepted
+- **Clean Output**: Formats the series as comma-separated values
+- **Continuous Operation**: Loop allows multiple series generations
+
+### How to Run
+
+```bash
+python Problem-2.py
+```
+
+### Usage Example
+
+```
+===================================================
+ODD NUMBER SERIES GENERATOR
+===================================================
+This program generates the first 'a' odd numbers.
+===================================================
+
+Enter value of 'a' (positive integer): 4
+
+Input a = 4
+Output: 1, 3, 5, 7
+--------------------------------------------------
+
+Generate another series? (yes/no): yes
+
+Enter value of 'a' (positive integer): 10
+
+Input a = 10
+Output: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19
+--------------------------------------------------
+
+Generate another series? (yes/no): no
+
+Goodbye!
+```
+
+### Pattern Explanation
+- Input a = 1 -> Output: 1
+- Input a = 2 -> Output: 1, 3
+- Input a = 3 -> Output: 1, 3, 5
+- Input a = 4 -> Output: 1, 3, 5, 7
+- Input a = x -> Output: First x odd numbers
+
+### Technical Details
+- **Algorithm**: Uses formula `2*i - 1` where i ranges from 1 to a
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(n)
+- **Edge Cases**: Returns empty output for non-positive integers
+
 ### Requirements
 - Python 3
 - No external dependencies required
