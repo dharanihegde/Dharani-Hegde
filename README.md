@@ -2,9 +2,27 @@
 
 ## Programming Test - First Screening
 
-This repository contains my solution for the programming test's first screening stage.
+This repository contains my solutions for the programming test's first screening stage.
 
 ## Programming Language Used: Python
+
+## How to Setup
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/dharanihegde/Dharani-Hegde.git
+   cd Dharani-Hegde
+   ```
+
+2. **Run any problem**:
+   ```bash
+   python Problem-1.py  # For Calculator
+   python Problem-2.py  # For Odd Number Series
+   python Problem-3.py  # For Pattern-based Odd Series
+   python Problem-4.py  # For Multiple Counter
+   ```
+
+---
 
 ## Problem-1: Calculator Class
 
@@ -21,28 +39,21 @@ A simple calculator that performs basic arithmetic operations (Addition, Subtrac
 
 ### How to Run
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/dharanihegde/Dharani-Hegde.git
-   cd Dharani-Hegde
-   ```
+```bash
+python Problem-1.py
+```
 
-2. **Run the calculator**:
-   ```bash
-   python Problem-1.py
-   ```
-
-3. **Select a mode**:
-   - Press `1` for Interactive Mode (manual input)
-   - Press `2` for Auto Test Mode (runs test cases)
-   - Press `3` to Exit
+Select a mode:
+- Press `1` for Interactive Mode (manual input)
+- Press `2` for Auto Test Mode (runs test cases)
+- Press `3` to Exit
 
 ### Interactive Mode Usage
 
 ```
 Enter first number (a): 10.5
 Enter second number (b): 5.5
-Enter operation (add/subtract/multiply/divide or +/-/*/÷): add
+Enter operation (add or subtract or multiply or divide or + or - or * or /): add
 
 Result: 10.5 add 5.5 = 16.0
 --------------------------------------------------
