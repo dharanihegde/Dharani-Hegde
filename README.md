@@ -189,6 +189,75 @@ Goodbye!
 - **Space Complexity**: O(n)
 - **Pattern Logic**: Even numbers produce output of `a-1` odd numbers
 
+## Problem-4: Multiple Counter Dictionary
+
+### Description
+A program that counts how many numbers in a given list are multiples of each number from 1 to 9, returning the results as a dictionary.
+
+### Features
+- **Comprehensive Counting**: Checks divisibility for all numbers 1-9
+- **Flexible Input**: Accepts lists with or without brackets
+- **Clean Output**: Returns dictionary in the exact required format
+- **Input Validation**: Ensures only valid integers are processed
+
+### How to Run
+
+```bash
+python Problem-4.py
+```
+
+### Usage Example
+
+```
+===================================================
+MULTIPLE COUNTER DICTIONARY
+===================================================
+Count multiples of 1-9 in a list of numbers
+===================================================
+
+Example input formats:
+  - 1,2,8,9,12,46,76,82,15,20,30
+  - [1,2,8,9,12,46,76,82,15,20,30]
+
+Enter list of numbers (comma-separated): 1,2,8,9,12,46,76,82,15,20,30
+
+Input: [1, 2, 8, 9, 12, 46, 76, 82, 15, 20, 30]
+Output: {1: 11, 2: 8, 3: 4, 4: 4, 5: 3, 6: 2, 7: 0, 8: 1, 9: 1}
+--------------------------------------------------
+
+Analyze another list? (yes/no): yes
+
+Enter list of numbers (comma-separated): [10, 20, 30, 40, 50]
+
+Input: [10, 20, 30, 40, 50]
+Output: {1: 5, 2: 5, 3: 1, 4: 2, 5: 5, 6: 1, 7: 0, 8: 1, 9: 0}
+--------------------------------------------------
+
+Analyze another list? (yes/no): no
+
+Goodbye!
+```
+
+### Algorithm Explanation
+For each number from 1 to 9, the program:
+1. Iterates through the input list
+2. Checks if each number is divisible using modulo operator (`%`)
+3. Counts the total multiples found
+4. Stores the count in a dictionary with the divisor as key
+
+### Output Interpretation
+For input `[1,2,8,9,12,46,76,82,15,20,30]`:
+- `1: 11` → All 11 numbers are divisible by 1
+- `2: 8` → 8 numbers are even (divisible by 2)
+- `3: 4` → 4 numbers are divisible by 3
+- `7: 0` → No numbers are divisible by 7
+- And so on for each key from 1 to 9
+
+### Technical Details
+- **Time Complexity**: O(9n) = O(n) where n is the length of input list
+- **Space Complexity**: O(1) - fixed size dictionary with 9 keys
+- **Input Formats**: Accepts both `1,2,3` and `[1,2,3]` formats
+- **Output Format**: Dictionary with keys 1-9 and their respective counts
 
 ### Requirements
 - Python 3
