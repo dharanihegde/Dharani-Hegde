@@ -119,6 +119,77 @@ Goodbye!
 - **Space Complexity**: O(n)
 - **Edge Cases**: Returns empty output for non-positive integers
 
+## Problem-3: Pattern-based Odd Number Series
+
+### Description
+A program that generates odd numbers following a specific pattern where even inputs produce the same output as the previous odd input.
+
+### Pattern Rule
+- **If 'a' is odd**: Generate 'a' odd numbers
+- **If 'a' is even**: Generate 'a-1' odd numbers (same as previous odd)
+
+### Features
+- **Pattern Recognition**: Automatically applies the even/odd rule
+- **Input Validation**: Ensures only valid positive integers are accepted
+- **User-Friendly**: Continuous operation with clear prompts
+
+### How to Run
+
+```bash
+python Problem-3.py
+```
+
+### Usage Example
+
+```
+===================================================
+PATTERN-BASED ODD NUMBER SERIES GENERATOR
+===================================================
+Pattern: Even inputs give same output as previous odd
+===================================================
+
+Enter value of 'a' (positive integer): 3
+
+Input a = 3
+Output: 1, 3, 5
+--------------------------------------------------
+
+Generate another series? (yes/no): yes
+
+Enter value of 'a' (positive integer): 4
+
+Input a = 4
+Output: 1, 3, 5
+--------------------------------------------------
+
+Generate another series? (yes/no): yes
+
+Enter value of 'a' (positive integer): 5
+
+Input a = 5
+Output: 1, 3, 5, 7, 9
+--------------------------------------------------
+
+Generate another series? (yes/no): no
+
+Goodbye!
+```
+
+### Pattern Examples
+- Input a = 1 -> Output: 1
+- Input a = 2 -> Output: 1 (same as a=1)
+- Input a = 3 -> Output: 1, 3, 5
+- Input a = 4 -> Output: 1, 3, 5 (same as a=3)
+- Input a = 5 -> Output: 1, 3, 5, 7, 9
+- Input a = 6 -> Output: 1, 3, 5, 7, 9 (same as a=5)
+
+### Technical Details
+- **Algorithm**: Uses modulo operator to detect even/odd: `count = a if a % 2 == 1 else a - 1`
+- **Time Complexity**: O(n)
+- **Space Complexity**: O(n)
+- **Pattern Logic**: Even numbers produce output of `a-1` odd numbers
+
+
 ### Requirements
 - Python 3
 - No external dependencies required
